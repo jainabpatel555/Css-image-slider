@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: rgb(56,54,54);
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+span{
+    color: rgb(50,241,50);
+}
+
+.main{
+    width: 70%;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 2px 10px 5px grey;
+
+    animation: change 12s infinite linear;
+}
+
+@keyframes change{
+    0%{
+        background: url(images/1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    25%{
+        background: url(images/2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    50%{
+        background: url(images/3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    75%{
+        background: url(images/4.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
